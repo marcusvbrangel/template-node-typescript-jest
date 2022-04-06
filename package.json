@@ -1,15 +1,17 @@
 {
-  "name": "01-template",
+  "name": "template-node-typescript-jest",
   "version": "0.0.1",
   "description": "A basic template to start a new project more fast",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "build:tsc": "tsc",
     "lint:check": "eslint ./src ./test --ext .ts",
     "lint:fix": "eslint ./src ./test --ext .ts --fix",
     "style:check": "prettier --check 'src/**/*.ts' 'test/**/*.ts'",
-    "style:fix": "prettier --write 'src/**/*.ts' 'test/**/*.ts'"
+    "style:fix": "prettier --write 'src/**/*.ts' 'test/**/*.ts'",
+    "test": "jest test/*.test.ts",
+    "test:watch": "jest test/*.test.ts --watch",
+    "test:coverage": "jest test/*.test.ts --watch --coverage"
   },
   "keywords": [
     "javascript",
@@ -22,11 +24,15 @@
   "author": "Marcus Rangel",
   "license": "MIT",
   "devDependencies": {
+    "@types/jest": "27.4.1",
     "@types/node": "17.0.23",
     "@typescript-eslint/eslint-plugin": "5.18.0",
     "@typescript-eslint/parser": "5.18.0",
     "eslint": "8.12.0",
+    "jest": "27.5.1",
     "prettier": "2.6.2",
+    "ts-jest": "27.1.4",
+    "ts-node": "10.7.0",
     "typescript": "4.6.3"
   }
 }

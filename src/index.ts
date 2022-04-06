@@ -17,3 +17,8 @@ const main = (): void => {
 };
 
 main();
+
+export {
+  sum,
+  double
+}

@@ -59,6 +59,12 @@ npm run style:fix
 
 -----------------------------------------
 
+npm install -D jest
+
+npm install -D @types/jest
+
+./node_modules/.bin/jest --init
+
 
 
 
