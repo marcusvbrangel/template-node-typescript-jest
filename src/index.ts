@@ -1,9 +1,9 @@
 
-const sum = (number1: number = 0, number2: number = 0): number => {
+const sum = (number1: number, number2: number): number => {
   return number1 + number2;
 }
 
-const double = (number1: number = 0, number2: number = 0): number => {
+const double = (number1 = 0, number2 = 0): number => {
   return number1 * number2;
 }
 
