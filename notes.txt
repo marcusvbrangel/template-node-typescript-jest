@@ -65,8 +65,11 @@ npm install -D @types/jest
 
 ./node_modules/.bin/jest --init
 
+-----------------------------------------
 
+npm install -D supertest
 
+npm install -D @types/supertest
 
 
 
